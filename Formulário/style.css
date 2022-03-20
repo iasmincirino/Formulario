@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, #ee7059, #E35238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    border: 0;
+}
+
+.container{
+    background: #fdeeee;
+    border-radius: 10px;
+    border: 2px solid #a8150a;
+    width: 450px;
+    max-width: 100%;
+}
+
+.header{
+    padding: 30px 40px;
+}
+
+.header h2{
+    font-weight: 600;
+    color: #b1271d;
+    font-size: 30px;
+}
+
+.form{
+    padding: 0 40px 30px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control.success input{
+    border: 3px solid #43dd5f;
+}
+
+.form-control.success small{
+    visibility: visible;
+    color: #43dd5f;
+}
+
+.form-control.error input{
+    border: 3px solid #e00505;
+}
+
+.form-control.error small{
+    visibility: visible;
+    color: #e00505;
+}
+
+input{
+    background: #fdeeee;
+    border: 2px solid #b1271d;
+    color: #b1271d;
+    border-radius: 5px;
+    outline: 0;
+    display: block;
+    font-size: 14px;
+    width: 100%;
+    padding: 15px;
+}
+
+input::placeholder{
+    color: #b1271d;
+}
+
+#olho{
+    border: 2px solid #b1271d;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 12px;
+    margin-top: 30px;
+}
+
+.form small {
+    visibility: hidden;
+    position: absolute;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.enviar{
+    background: #b1271d;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.enviar:hover{
+    background: #c23227;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 950px){
+    .container{
+        width: 80%;
+        margin: auto;
+    }
+}
